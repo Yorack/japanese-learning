@@ -17,7 +17,7 @@ const JapaneseInput = () => {
    setKatakanaValue(toKatakana(e.target.value));
  }
 
-  return <div className="flex flex-2 box-content h-64 w-64 p-4 rounded-md m-4 bg-white shadow-lg">
+  return <div className="flex-2 box-content h-64 w-64 p-4 rounded-md m-4 bg-white shadow-lg">
     <h2  className="text-lg leading-6 font-medium text-black mb-4 text-purple-600 uppercase ">Romanji transformer</h2>
     <input type="text"
            onChange={handleChange}
