@@ -8,7 +8,6 @@ const CopyButton = ({ text }) => {
 
   const handleClick = () => {
     navigator.clipboard.writeText(text);
-    console.log("--- TEST");
     setVisiblePopover(true);
   };
 

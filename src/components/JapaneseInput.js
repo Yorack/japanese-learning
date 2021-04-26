@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { toHiragana, toKatakana } from "wanakana";
-import { DocumentDuplicateIcon } from "@heroicons/react/outline";
-import Button from "./button/CopyButton";
 import CopyButton from "./button/CopyButton";
 
 const JapaneseInput = () => {
