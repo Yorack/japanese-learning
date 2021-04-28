@@ -35,7 +35,7 @@ const JapaneseLesson = () => {
         });
 
         return (
-          <div className="box-content rounded-md bg-white shadow-lg text-left">
+          <div className="box-content rounded-md bg-white shadow-lg text-left mb-4">
             <LessonDisclosure lesson={lesson} content={lessonContent} />
           </div>
         );
