@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "japane_test";
+  src: local("japane_test"), url("./fonts/NotoSansJP-Regular.otf") format("opentype")
+}
+
 body {
   margin: 0;
-  font-family: 'Roboto', 'Fira Sans', sans-serif;
+  font-family: 'japane_test', 'Roboto', 'Fira Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
