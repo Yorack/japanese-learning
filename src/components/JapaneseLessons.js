@@ -173,6 +173,41 @@ const lessons = [
       },
     ],
   },
+  {
+    title: "TIME - 1",
+    articles: [
+      {
+        title: "Kanji / vocabulary",
+        items: [
+          new ArticleItem("時", "ji(じ)", "time"),
+          new ArticleItem("分", "fun", "part of minute"),
+          new ArticleItem("今", "ima", "now, right now"),
+          new ArticleItem("四", "yon(よん)", "4"),
+          new ArticleItem("五", "go", "5"),
+          new ArticleItem("六", "roku(ろく)", "6"),
+          new ArticleItem("七", "nana(なな)", "7"),
+          new ArticleItem("八", "hatchi(はち)", "8"),
+          new ArticleItem("九", "kyuu(きゅう)", "9"),
+          new ArticleItem("十", "juu(じゅう)", "10"),
+          new ArticleItem("半", "han(はん)", "30 as in 9:30"),
+        ],
+      },
+      {
+        title: "Kanji / vocabulary",
+        items: [
+          new ArticleItem("ゼロ", "", "Zero - 0"),
+          new ArticleItem("ちょうど", "choudo", "exactly, sharp"),
+        ],
+      },
+      {
+        title: "Kanji / vocabulary",
+        items: [
+          new ArticleItem("二時二分です", "ni ji ni fun desu", "it is 2:02"),
+          new ArticleItem("", ""),
+        ],
+      },
+    ],
+  },
 ];
 
 export { lessons };
