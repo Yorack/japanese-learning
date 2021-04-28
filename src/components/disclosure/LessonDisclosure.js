@@ -3,7 +3,7 @@ import { ChevronRightIcon } from "@heroicons/react/outline";
 
 const LessonDisclosure = ({ lesson, content }) => {
   return (
-    <Disclosure className="rounded-md">
+    <Disclosure className="rounded-md mb-4">
       {({ open }) => (
         <>
           <Disclosure.Button className="w-full text-left focus:outline-none rounded-md">
