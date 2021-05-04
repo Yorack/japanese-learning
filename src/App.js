@@ -1,15 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
-import JapaneseInput from "./components/JapaneseInput";
-import JapaneseLesson from "./components/JapaneseLesson";
+import Menu from "./components/Menu";
+import AppRouter from "./components/AppRouter";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <div className="flex">
-        <JapaneseLesson />
-        <JapaneseInput />
-      </div>
+      <BrowserRouter>
+        <Menu />
+
+        <div className="flex">
+          <AppRouter />
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
