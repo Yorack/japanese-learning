@@ -180,8 +180,8 @@ const lessons = [
         title: "Kanji / vocabulary",
         items: [
           new ArticleItem("時", "ji(じ)", "time"),
-          new ArticleItem("分", "fun", "part of minute"),
-          new ArticleItem("今", "ima", "now, right now"),
+          new ArticleItem("分", "fun (pun avec chiffre ?)", "part of minute"),
+          new ArticleItem("今", "ima(いま)", "now, right now"),
           new ArticleItem("四", "yon(よん)", "4"),
           new ArticleItem("五", "go", "5"),
           new ArticleItem("六", "roku(ろく)", "6"),
@@ -197,13 +197,23 @@ const lessons = [
         items: [
           new ArticleItem("ゼロ", "", "Zero - 0"),
           new ArticleItem("ちょうど", "choudo", "exactly, sharp"),
+          new ArticleItem("何時", "nanji", "What time..."),
         ],
       },
       {
-        title: "Kanji / vocabulary",
+        title: "Phrase",
         items: [
           new ArticleItem("二時二分です", "ni ji ni fun desu", "it is 2:02"),
-          new ArticleItem("", ""),
+          new ArticleItem(
+            "今、何時ですか？",
+            "ima, nanji desuka ?",
+            "What time is it now ?"
+          ),
+          new ArticleItem(
+            "今は二時です",
+            "ima ha ni ji desu",
+            "It is two o'clock right now."
+          ),
         ],
       },
     ],
