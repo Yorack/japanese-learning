@@ -45,9 +45,10 @@ const KanjiLesson = () => {
 
   return (
     <div className="flex-2 box-content w-full p-4 rounded-md m-4 bg-white shadow-lg">
+      {end && <KanjiLessonEnd courseStat={courseStat} />}
       {!started && (
         <button
-          className="bg-indigo-500 text-white active:bg-indigo-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+          className="my-8 bg-indigo-500 text-white active:bg-indigo-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
           type="button"
           onClick={handleStart}
         >
@@ -55,7 +56,6 @@ const KanjiLesson = () => {
         </button>
       )}
       {started && <KanjiLessonStarted callbackEnd={handleEnd} />}
-      {end && <KanjiLessonEnd courseStat={courseStat} />}
     </div>
   );
 };

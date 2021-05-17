@@ -6,26 +6,26 @@ import { toHiragana } from "wanakana";
 import useFocus from "../hook/useFocus";
 
 const kanji = [
-  { character: "人", japanese: "ひと", meaning: "Personne" },
-  { character: "男", japanese: "おとこ", meaning: "Homme" },
-  { character: "女", japanese: "おんな", meaning: "Femme" },
-  { character: "子", japanese: "こ", meaning: "Enfant" },
-  { character: "日", japanese: "ひ", meaning: "Soleil" },
-  { character: "月", japanese: "つき", meaning: "Lune" },
-  { character: "時", japanese: "とき", meaning: "Temps" },
-  { character: "水", japanese: "みず", meaning: "Eau" },
-  { character: "火", japanese: "ひ", meaning: "Feu" },
-  { character: "土", japanese: "つち", meaning: "Terre" },
-  { character: "風", japanese: "かぜ", meaning: "Vent" },
-  { character: "空", japanese: "そら", meaning: "Ciel" },
-  { character: "山", japanese: "やま", meaning: "Montagne" },
-  { character: "川", japanese: "かわ", meaning: "Rivière" },
-  { character: "木", japanese: "き", meaning: "Arbre" },
-  { character: "花", japanese: "はな", meaning: "Fleur" },
-  { character: "雨", japanese: "あめ", meaning: "Pluie" },
-  { character: "雪", japanese: "ゆき", meaning: "Neige" },
-  { character: "金", japanese: "かね", meaning: "Argent" },
-  { character: "刀", japanese: "かたな", meaning: "Sabre" },
+  { character: "人", japanese: "ひと", meaning: ["Personne", "Person"] },
+  { character: "男", japanese: "おとこ", meaning: ["Homme", "Man"] },
+  { character: "女", japanese: "おんな", meaning: ["Femme", "woman"] },
+  { character: "子", japanese: "こ", meaning: ["Enfant", "child"] },
+  { character: "日", japanese: "ひ", meaning: ["Soleil", "sun"] },
+  { character: "月", japanese: "つき", meaning: ["Lune", "moon"] },
+  { character: "時", japanese: "とき", meaning: ["Temps", "time"] },
+  { character: "水", japanese: "みず", meaning: ["Eau", "water"] },
+  { character: "火", japanese: "ひ", meaning: ["Feu", "fire"] },
+  { character: "土", japanese: "つち", meaning: ["Terre", "earth"] },
+  { character: "風", japanese: "かぜ", meaning: ["Vent", "wind"] },
+  { character: "空", japanese: "そら", meaning: ["Ciel", "sky"] },
+  { character: "山", japanese: "やま", meaning: ["Montagne", "mountain"] },
+  { character: "川", japanese: "かわ", meaning: ["Rivière", "river"] },
+  { character: "木", japanese: "き", meaning: ["Arbre", "tree"] },
+  { character: "花", japanese: "はな", meaning: ["Fleur", "flower"] },
+  { character: "雨", japanese: "あめ", meaning: ["Pluie", "rain"] },
+  { character: "雪", japanese: "ゆき", meaning: ["Neige", "snow"] },
+  { character: "金", japanese: "かね", meaning: ["Argent", "money"] },
+  { character: "刀", japanese: "かたな", meaning: ["Sabre", "sword"] },
 ];
 
 const KanjiLessonStarted = ({ callbackEnd }) => {
@@ -72,7 +72,7 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
     const value = e.target.value;
     setMeaningValue(value);
 
-    if (value.toLowerCase() === currentKanji.meaning.toLowerCase()) {
+    if (currentKanji.meaning.includes(value.toLowerCase())) {
       setMeaning(true);
     } else {
       setMeaning(false);
@@ -82,7 +82,7 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
   const nextQuestion = () => {
     const newQuestionIndex = questionIndex + 1;
     setQuestionIndex(newQuestionIndex);
-    setProgress((newQuestionIndex / kanji.length) * 100);
+    setProgress(Math.floor((newQuestionIndex / kanji.length) * 100));
     setJapanese(false);
     setMeaning(false);
     setSuccess(false);
@@ -97,7 +97,7 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
     setHelpUsed(true);
 
     setJapaneseValue(currentKanji.japanese);
-    setMeaningValue(currentKanji.meaning);
+    setMeaningValue(currentKanji.meaning[0]);
     setJapanese(true);
     setMeaning(true);
   };
@@ -111,10 +111,7 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
   };
 
   const handleKeyPress = (event) => {
-    console.log("KEY PRESS DETECTED");
     if (event.charCode === 13) {
-      console.log("it was enter");
-
       if (success && questionIndex !== kanji.length - 1) {
         nextQuestion();
       } else if (success && questionIndex === kanji.length - 1) {
@@ -127,19 +124,19 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
     <div>
       <ProgressBar progress={progress} />
       <div
-        className="focus:outline-none"
+        className="focus:outline-none flex justify-center items-center py-4"
         onKeyPress={handleKeyPress}
         ref={ref}
         tabIndex="-1"
       >
-        <h2 className=" my-6 py-3 w-max">
+        <h2 className="w-1/3">
           What is this kanji:{" "}
           <span className="text-3xl mx-4">
             {shuffledKanji[questionIndex].character}
           </span>
         </h2>
 
-        <div className="border relative flex w-1/2 flex-wrap items-stretch mb-3 ">
+        <div className="border relative flex w-1/3 flex-wrap items-stretch mb-3 mx-4">
           <input
             tabIndex={1}
             type="text"
@@ -150,7 +147,7 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
             value={japaneseValue}
             className={`px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative ${
               success ? "bg-gray-100" : "bg-white"
-            }  rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring pr-10 w-full`}
+            }  rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring pr-10 w-full bigTextInput`}
           />
           {japanese && (
             <span className="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
@@ -159,7 +156,7 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
           )}
         </div>
 
-        <div className="border relative flex w-1/2 flex-wrap items-stretch mb-3">
+        <div className="border relative flex w-1/3 flex-wrap items-stretch mb-3">
           <input
             tabIndex={2}
             type="text"
@@ -169,7 +166,7 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
             value={meaningValue}
             className={`px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative ${
               success ? "bg-gray-100" : "bg-white"
-            } rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring pr-10 w-full`}
+            } rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring pr-10 w-full bigTextInput`}
           />
           {meaning && (
             <span className="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 right-0 pr-3 py-3">
