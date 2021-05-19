@@ -4,6 +4,7 @@ import { DocumentDuplicateIcon } from "@heroicons/react/outline";
 import Button from "./button/CopyButton";
 import CopyButton from "./button/CopyButton";
 import ArticleItem from "../entity/ArticleItem";
+import ArticleItemKanji from "../entity/ArticleItemKanji";
 
 const lessons = [
   {
@@ -215,6 +216,201 @@ const lessons = [
             "It is two o'clock right now."
           ),
         ],
+      },
+    ],
+  },
+  {
+    title: "Routines - 1",
+    articles: [
+      {
+        title: "KANJI",
+        items: [
+          new ArticleItem("学", "ga?", ""),
+          new ArticleItem("行", "i ?", "Go"),
+          new ArticleItem("校", "ko", "School"),
+          new ArticleItem("午", "ご (go)", "Noon"),
+          new ArticleItem("後", "", "After"),
+          new ArticleItem("会", "kai", ""),
+          new ArticleItem("社", "cha", ""),
+          new ArticleItem("朝", "あさ (asa)", ""),
+          new ArticleItem("毎朝", "まいあさ (maiasa)", " every morning"),
+          new ArticleItem("毎", "まい", "every, each, per"),
+          new ArticleItem("日", "", "the day, the sun"),
+        ],
+      },
+      {
+        title: "vocabulary",
+        items: [
+          new ArticleItem("学校", "がっこう (gakkou)", "school"),
+          new ArticleItem("会社", "かいしゃ (kaicha)", "company, office"),
+          new ArticleItem("午後", "gogo", "afternoon (P.M)"),
+          new ArticleItem("午前", "ごぜん(gozen)", "morning (A.M)"),
+          new ArticleItem("行きます", "ikimasu", "go, will go, am going"),
+          new ArticleItem(
+            "行きません",
+            "ikimasen",
+            "do NOT (go, will go, am going)"
+          ),
+          new ArticleItem("に", "ni", "(particule) to, at, in"),
+          new ArticleItem("ごろ", "goro", "around, about"),
+          new ArticleItem("寝ます", "nemasu", "go to sleep"),
+          new ArticleItem("起きます", "okimasu", "get up, wake up"),
+          new ArticleItem("起きません", "okimasen", "not get up, not wake up"),
+          new ArticleItem("午前零時", "gozenneji", "12 am"),
+        ],
+      },
+      {
+        title: "Phrase",
+        items: [
+          new ArticleItem("行きます", "i ki ma su", "i go, i will go"),
+          new ArticleItem(
+            "学校に行きません",
+            "gako ni ikimasen",
+            "i do not go to school"
+          ),
+          new ArticleItem(
+            "学校に行",
+            "gako nii ",
+            "Here the に indicate the direction 'to' and the '行' the action to 'go' so to go 'nii' i guess"
+          ),
+          new ArticleItem(
+            "九時ごろに学校へ行きます",
+            "kuji goro ni gako ikimasu",
+            "i go to school at around 9"
+          ),
+          new ArticleItem(
+            "私は毎日りんごを食べます",
+            "watashiha mai nichi ringo tabemasu ",
+            "i eat apple every day"
+          ),
+          new ArticleItem("", "", ""),
+          new ArticleItem("", "", ""),
+        ],
+      },
+    ],
+  },
+  {
+    title: "Home - 1",
+    articles: [
+      {
+        title: "KANJI",
+        items: [
+          new ArticleItemKanji(
+            "台所",
+            "だいどころ",
+            "kitchen",
+            "pedestal + place"
+          ),
+          new ArticleItemKanji("所", "ところ", "place ?"),
+          new ArticleItemKanji("部屋", "へや", "room", "division + dwelling"),
+          new ArticleItemKanji("風呂", "ふろ", "bath", "wind + spine"),
+          new ArticleItemKanji("庭", "にわ", "yard, garden"),
+          new ArticleItemKanji("家", "いえ", "house"),
+          new ArticleItemKanji("窓", "まど", "window"),
+          new ArticleItemKanji("猫", "ねこ", "cat"),
+          new ArticleItemKanji("犬", "いぬ", "dog"),
+          new ArticleItemKanji("鳥", "とり", "bird"),
+          new ArticleItemKanji("椅子", "いす", "chair", "chair + small thing"),
+          new ArticleItemKanji("子", "ko", ""),
+          new ArticleItemKanji("机", "つくえ", "desk"),
+          new ArticleItemKanji("寝室", "shinshitsu", "bedroom"),
+        ],
+      },
+      {
+        title: "vocabulary",
+        items: [
+          new ArticleItem(
+            "あります",
+            "arimasu",
+            "there is, there are => used for inanimate objects, like books, rooms, televisions, and apples."
+          ),
+          new ArticleItem(
+            "います ",
+            "imasu",
+            "there is, there are  => used for animate objects, like people, cats, dogs, and other animals."
+          ),
+          new ArticleItem("テーブル ", "taburu", "table"),
+          new ArticleItem("ペット ", "petto", "pet"),
+          new ArticleItem("トイレ ", "toire", "bathroom"),
+          new ArticleItem("あそこです ", "asokodesu", "over there, there"),
+          new ArticleItem("子犬 ", "ko inu", "pupy"),
+        ],
+      },
+      {
+        title: "Phrase",
+        items: [
+          new ArticleItem(
+            "鳥が二羽います",
+            "tori ga niwo imasu",
+            "there are two birds."
+          ),
+          new ArticleItem("どこですか", "", "where is ..."),
+          new ArticleItem("テーブルはどこですか", "", "where is the table "),
+          new ArticleItem(
+            "トイレはどこですか",
+            "toire ha doko desuka",
+            "Where is the toilets ? ⭐⭐⭐⭐"
+          ),
+          new ArticleItem(
+            "部屋はどこですか",
+            "eya ha doko desuka",
+            "Where is the room? ⭐⭐⭐⭐"
+          ),
+          new ArticleItem(
+            "ここはどこですか",
+            "koko ha doko desuka",
+            "Where is this place"
+          ),
+          new ArticleItem(
+            "家はここです",
+            "ie ha koko desu",
+            "the house is over there"
+          ),
+          new ArticleItem(
+            "あそこにあります",
+            "a so ko ni a ri ma su",
+            "it is over there"
+          ),
+          new ArticleItem(
+            "トイレはあそこです",
+            "",
+            "the toilets are over there"
+          ),
+          new ArticleItem("", "", ""),
+        ],
+      },
+      {
+        title: "Counting 羽",
+        items: [
+          new ArticleItem("羽", "wo", "counting word for bird/rabbit"),
+          new ArticleItem("一羽", "いちわ", "(counting) 1 bird"),
+          new ArticleItem("二羽", "にわ", "(counting) 2 bird"),
+          new ArticleItem("三羽", "さんわ", "(counting) 3 bird"),
+          new ArticleItem("四羽", "よんわ", "(counting) 4 bird"),
+          new ArticleItem("五羽", "ごわ", "(counting) 5 bird"),
+          new ArticleItem("六羽", "ろくわ", "(counting) 6 bird"),
+          new ArticleItem("七羽", "しちわ or ななわ", "(counting) 7 bird"),
+          new ArticleItem("八羽", "はちわ", "(counting) 8 bird"),
+          new ArticleItem("九羽", "きゅうわ", "(counting) 9 bird"),
+          new ArticleItem("十羽", "じゅうわ", "(1counting) 0 bird"),
+        ],
+      },
+    ],
+  },
+  {
+    title: "empty buffer lesson",
+    articles: [
+      {
+        title: "KANJI",
+        items: [new ArticleItem("", "", "")],
+      },
+      {
+        title: "vocabulary",
+        items: [new ArticleItem("", "", "")],
+      },
+      {
+        title: "Phrase",
+        items: [new ArticleItem("", "", "")],
       },
     ],
   },
