@@ -10,12 +10,12 @@ const JapaneseLesson = () => {
           return (
             <div className={`${index > 0 ? "mt-8" : ""} p-4 `}>
               <h3>{article.title}</h3>
-              <table className="w-full">
+              <table className="w-full table-lesson">
                 <thead>
                   <tr>
-                    <th className="w-2/6">Symbol</th>
-                    <th className="w-2/6">pronunciation</th>
-                    <th className="w-2/6">meaning</th>
+                    <th>Symbol</th>
+                    <th>pronunciation</th>
+                    <th>meaning</th>
                   </tr>
                 </thead>
                 <tbody>

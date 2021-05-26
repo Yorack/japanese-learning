@@ -28,17 +28,32 @@ code {
 }
 
 h1 {
-  @apply text-3xl leading-6 font-medium text-purple-600 bg-purple-50 uppercase
+  @apply text-3xl leading-6 font-medium uppercase;
+  color: #2680C2 !important;
 }
 
 h2 {
-  @apply text-xl leading-6 font-medium text-black mb-4 text-purple-400
+  @apply text-xl leading-6 font-medium text-black mb-4;
+  color: #62B0E8;
 }
 
 h3 {
-  @apply text-lg leading-6 font-medium text-black mb-4 text-purple-400 uppercase
+  @apply text-lg leading-6 font-medium text-black mb-4 uppercase;
+  color: #62B0E8;
 }
 
 .bigTextInput {
   font-size: 18px;
+}
+
+.table-lesson tr {
+  border-top: solid 1px lightgrey;
+}
+
+.table-lesson td, .table-lesson th {
+  padding: 8px 16px;
+}
+
+.table-lesson th {
+  font-size: 20px;
 }

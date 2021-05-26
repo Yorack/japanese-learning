@@ -334,6 +334,7 @@ const lessons = [
           new ArticleItem("トイレ ", "toire", "bathroom"),
           new ArticleItem("あそこです ", "asokodesu", "over there, there"),
           new ArticleItem("子犬 ", "ko inu", "pupy"),
+          new ArticleItem("子猫 ", "ko neko", "chatons !"),
         ],
       },
       {
