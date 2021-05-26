@@ -399,6 +399,51 @@ const lessons = [
     ],
   },
   {
+    title: "Intro - 3",
+    articles: [
+      {
+        title: "KANJI",
+        items: [
+          new ArticleItem("住み", "sumi", ""),
+          new ArticleItem("東京", "とうきょう(tokyo)", ""),
+          new ArticleItem("京都", "きょうと (kyoto)", ""),
+          new ArticleItem("大阪", "おおさか (oosaka)", ""),
+          new ArticleItem("六歳", "ろくさい (rokusai)", ""),
+          new ArticleItem("歳", "さい  (sai)", "years old"),
+          new ArticleItem("留学", "りゅうがく (ryuugaku)", ""),
+          new ArticleItem("留", "りゅう(ryuu)", "foreign ??"),
+          new ArticleItem("外", "soto?", ""),
+          new ArticleItem("外国人", "gaikokujin?", "foreigner ??"),
+          new ArticleItem("年生", "nensei?", "grade, year(in school i guess)"),
+          new ArticleItem("小学生", "chogaku?", "elementary school"),
+          new ArticleItem("中学生", "chugaku?", "middle school"),
+        ],
+      },
+      {
+        title: "vocabulary",
+        items: [
+          new ArticleItem("住んでいません", "sundeimasen", "doesn't live (in)"),
+          new ArticleItem("住んでいます", "sundeimasu", "do live (in)"),
+          new ArticleItem("place+に", "ni", "in"),
+          new ArticleItem("と申します", "tomoshimasu", "my name is"),
+          new ArticleItem(
+            "end of phrase + よ",
+            "yo",
+            "to emphase something like 'you know', 'won't you'"
+          ),
+        ],
+      },
+      {
+        title: "Phrase",
+        items: [
+          new ArticleItem("二十一歳です", "nijuuisaidesu", "i am 22"),
+          new ArticleItem("そうです", "soudesu", "that's right"),
+          new ArticleItem("ごめんね", "gomene", "sorry"),
+        ],
+      },
+    ],
+  },
+  {
     title: "empty buffer lesson",
     articles: [
       {
