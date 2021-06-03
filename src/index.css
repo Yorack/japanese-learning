@@ -15,6 +15,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  outline: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -46,12 +50,39 @@ h3 {
   font-size: 18px;
 }
 
-.table-lesson tr {
-  border-top: solid 1px lightgrey;
+.table-lesson {
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+.table-lesson tbody td {
+  border-bottom: solid 1px lightgrey;
+}
+
+.table-lesson tbody td:first-child {
+  border-bottom: solid 1px lightgrey;
+  border-left: solid 1px lightgrey;
+}
+
+.table-lesson tbody td:last-child {
+  border-bottom: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+}
+
+.table-lesson thead th {
+  @apply bg-lightBlue-600 text-white;
+}
+
+.table-lesson thead th:first-child {
+  border-radius: 25px 0 0 0;
+}
+
+.table-lesson thead th:last-child {
+  border-radius: 0 25px 0 0;
 }
 
 .table-lesson td, .table-lesson th {
-  padding: 8px 16px;
+  padding: 16px;
 }
 
 .table-lesson th {

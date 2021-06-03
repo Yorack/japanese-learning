@@ -17,7 +17,7 @@ const LessonDisclosure = ({ lesson, content }) => {
 
           <Disclosure.Panel
             open={open}
-            className="rounded-b-lg border border-purple-100 border-t-0"
+            className="rounded-b-lg border border-t-0"
           >
             {content}
           </Disclosure.Panel>
