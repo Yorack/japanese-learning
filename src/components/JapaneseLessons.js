@@ -1,8 +1,3 @@
-import { useEffect, useState } from "react";
-import { toHiragana, toKatakana } from "wanakana";
-import { DocumentDuplicateIcon } from "@heroicons/react/outline";
-import Button from "./button/CopyButton";
-import CopyButton from "./button/CopyButton";
 import ArticleItem from "../entity/ArticleItem";
 import ArticleItemKanji from "../entity/ArticleItemKanji";
 
@@ -16,12 +11,12 @@ const lessons = [
           new ArticleItem("出身", "shusshin(しゅっしん)", "(i) am from"),
           new ArticleItem(
             "人",
-            "jin (じん)",
+            "hito (ひと)",
             "Ne s'utilise pas seul mais en mode pay + 人"
           ),
           new ArticleItem("本", "hon (ほん)"),
           new ArticleItem("中国", "chuugouku (ちゅうごく)", "China"),
-          new ArticleItem("何人", "nanin"),
+          new ArticleItem("何人", "nanjin"),
           new ArticleItem("言い", "ii"),
           new ArticleItem("中村", "nakamura (なかむら)"),
           new ArticleItem("村", "mura (むら)"),
@@ -405,9 +400,9 @@ const lessons = [
         title: "KANJI",
         items: [
           new ArticleItem("住み", "sumi", ""),
-          new ArticleItem("東京", "とうきょう(tokyo)", ""),
-          new ArticleItem("京都", "きょうと (kyoto)", ""),
-          new ArticleItem("大阪", "おおさか (oosaka)", ""),
+          new ArticleItem("東京", "とうきょう(tokyo)", "NOM DE VILLE"),
+          new ArticleItem("京都", "きょうと (kyoto)", "NOM DE VILLE"),
+          new ArticleItem("大阪", "おおさか (oosaka)", "NOM DE VILLE"),
           new ArticleItem("六歳", "ろくさい (rokusai)", ""),
           new ArticleItem("歳", "さい  (sai)", "years old"),
           new ArticleItem("留学", "りゅうがく (ryuugaku)", ""),
@@ -417,6 +412,11 @@ const lessons = [
           new ArticleItem("年生", "nensei?", "grade, year(in school i guess)"),
           new ArticleItem("小学生", "chogaku?", "elementary school"),
           new ArticleItem("中学生", "chugaku?", "middle school"),
+          new ArticleItem("高校", "こうこう(koko)", "high school"),
+          new ArticleItem("大学生", "daigakusei", "university student"),
+          new ArticleItem("違い", "ちがい(chigai)", ""),
+          new ArticleItem("直美", "なおみ(naomi)", "nom | prenom ?"),
+          new ArticleItem("健太", "けんた(kenta)", "nom | prenom ?"),
         ],
       },
       {
@@ -431,6 +431,26 @@ const lessons = [
             "yo",
             "to emphase something like 'you know', 'won't you'"
           ),
+          new ArticleItem(
+            "違います",
+            "chigaimasu",
+            "is not right, is not correct"
+          ),
+          new ArticleItem(
+            "中学生たち",
+            "chugakuseitachi",
+            "middle school studentS"
+          ),
+          new ArticleItem(
+            "学生たち",
+            "gakuseitachi",
+            "studentS (plural it seems)"
+          ),
+          new ArticleItem(
+            "たち",
+            "tachi",
+            "seems to indicate a plural ending (plural it seems)"
+          ),
         ],
       },
       {
@@ -439,6 +459,16 @@ const lessons = [
           new ArticleItem("二十一歳です", "nijuuisaidesu", "i am 22"),
           new ArticleItem("そうです", "soudesu", "that's right"),
           new ArticleItem("ごめんね", "gomene", "sorry"),
+          new ArticleItem(
+            "違いは何ですか",
+            "chigaihanandesuka",
+            "What is the difference"
+          ),
+          new ArticleItem(
+            "健太は東京に住んでいます",
+            "kentaha tokyoni sundeimasu",
+            "kenta lives in (particule 'ni') tokyo"
+          ),
         ],
       },
     ],
