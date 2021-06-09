@@ -3,7 +3,7 @@ import ArticleItemKanji from "../entity/ArticleItemKanji";
 
 const lessons = [
   {
-    title: "INTRO - 1",
+    title: "Intro- 1",
     articles: [
       {
         title: "Kanji",
@@ -66,7 +66,7 @@ const lessons = [
         ],
       },
       {
-        title: "PHRASE",
+        title: "Phrase",
         items: [
           new ArticleItem(
             "マリアと言います",
@@ -84,10 +84,10 @@ const lessons = [
     ],
   },
   {
-    title: "FOOD - 1",
+    title: "Food- 1",
     articles: [
       {
-        title: "Kanji / vocabulary",
+        title: "Kanji / Vocabulary",
         items: [
           new ArticleItem("茶", "cha(ちゃ)"),
           new ArticleItem("お茶", "ocha(おちゃ)", "🍵 tea (green)"),
@@ -111,7 +111,7 @@ const lessons = [
         ],
       },
       {
-        title: "Eat or drink",
+        title: "EatOrDrink",
         items: [
           new ArticleItem("食べます", "tabemasu", "do eat"),
           new ArticleItem("食べません", "tabemasen", "do not eat"),
@@ -170,10 +170,10 @@ const lessons = [
     ],
   },
   {
-    title: "TIME - 1",
+    title: "Time- 1",
     articles: [
       {
-        title: "Kanji / vocabulary",
+        title: "Kanji / Vocabulary",
         items: [
           new ArticleItem("時", "ji(じ)", "time"),
           new ArticleItem("分", "fun (pun avec chiffre ?)", "part of minute"),
@@ -189,7 +189,7 @@ const lessons = [
         ],
       },
       {
-        title: "Kanji / vocabulary",
+        title: "Kanji / Vocabulary",
         items: [
           new ArticleItem("ゼロ", "", "Zero - 0"),
           new ArticleItem("ちょうど", "choudo", "exactly, sharp"),
@@ -215,10 +215,10 @@ const lessons = [
     ],
   },
   {
-    title: "Routines - 1",
+    title: "Routines- 1",
     articles: [
       {
-        title: "KANJI",
+        title: "Kanji",
         items: [
           new ArticleItem("学", "ga?", ""),
           new ArticleItem("行", "i ?", "Go"),
@@ -229,12 +229,13 @@ const lessons = [
           new ArticleItem("社", "cha", ""),
           new ArticleItem("朝", "あさ (asa)", ""),
           new ArticleItem("毎朝", "まいあさ (maiasa)", " every morning"),
+          new ArticleItem("毎日", "(mainichi)", " every day"),
           new ArticleItem("毎", "まい", "every, each, per"),
           new ArticleItem("日", "hi ?", "the day, the sun"),
         ],
       },
       {
-        title: "vocabulary",
+        title: "Vocabulary",
         items: [
           new ArticleItem("学校", "がっこう (gakkou)", "school"),
           new ArticleItem("会社", "かいしゃ (kaicha)", "company, office"),
@@ -270,7 +271,7 @@ const lessons = [
           ),
           new ArticleItem(
             "九時ごろに学校へ行きます",
-            "kuji goro ni gako ikimasu",
+            "kuji goro ni gakohe ikimasu",
             "i go to school at around 9"
           ),
           new ArticleItem(
@@ -285,10 +286,10 @@ const lessons = [
     ],
   },
   {
-    title: "Home - 1",
+    title: "Home- 1",
     articles: [
       {
-        title: "KANJI",
+        title: "Kanji",
         items: [
           new ArticleItemKanji(
             "台所",
@@ -312,7 +313,7 @@ const lessons = [
         ],
       },
       {
-        title: "vocabulary",
+        title: "Vocabulary",
         items: [
           new ArticleItem(
             "あります",
@@ -376,7 +377,7 @@ const lessons = [
         ],
       },
       {
-        title: "Counting 羽",
+        title: "Counting羽",
         items: [
           new ArticleItem("羽", "wo", "counting word for bird/rabbit"),
           new ArticleItem("一羽", "いちわ", "(counting) 1 bird"),
@@ -394,10 +395,10 @@ const lessons = [
     ],
   },
   {
-    title: "Intro - 3",
+    title: "Intro- 3",
     articles: [
       {
-        title: "KANJI",
+        title: "Kanji",
         items: [
           new ArticleItem("住み", "sumi", ""),
           new ArticleItem("東京", "とうきょう(tokyo)", "NOM DE VILLE"),
@@ -420,7 +421,7 @@ const lessons = [
         ],
       },
       {
-        title: "vocabulary",
+        title: "Vocabulary",
         items: [
           new ArticleItem("住んでいません", "sundeimasen", "doesn't live (in)"),
           new ArticleItem("住んでいます", "sundeimasu", "do live (in)"),
@@ -474,14 +475,41 @@ const lessons = [
     ],
   },
   {
-    title: "empty buffer lesson",
+    title: "Counting",
     articles: [
       {
-        title: "KANJI",
+        title: "Vocabulary",
+        items: [
+          new ArticleItem("いくつ", "ikutsu", "how many..."),
+          new ArticleItem("卵", "たまご(tamago)", "eggs"),
+        ],
+      },
+      {
+        title: "counting",
+        items: [
+          new ArticleItem("１・一・いち", "一つ・ひとつ", "一個・いっこ"),
+          new ArticleItem("２・二・に", "二つ・ふたつ", "二個・にこ"),
+          new ArticleItem("３・三・さん", "三つ・みっつ", "三個・さんこ"),
+          new ArticleItem("４・四・よん", "四つ・よっつ", "四個・よんこ"),
+          new ArticleItem("５・五・ご", "五つ・いつつ", "五個・ごこ"),
+          new ArticleItem("６・六・ろく", "六つ・むっつ", "六個・ろっこ"),
+          new ArticleItem("７・七・なな", "七つ・ななつ", "七個・ななこ"),
+          new ArticleItem("８・八・はち", "八つ・やっつ", "八個・はっこ"),
+          new ArticleItem("９・九・きゅう", "九つ・ここのつ", "九個・きゅうこ"),
+          new ArticleItem("１０・十・じゅう", "十・とお", "十個・じゅっこ"),
+        ],
+      },
+    ],
+  },
+  {
+    title: "EmptyBufferLesson",
+    articles: [
+      {
+        title: "Kanji",
         items: [new ArticleItem("", "", "")],
       },
       {
-        title: "vocabulary",
+        title: "Vocabulary",
         items: [new ArticleItem("", "", "")],
       },
       {

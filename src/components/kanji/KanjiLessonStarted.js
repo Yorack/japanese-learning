@@ -90,6 +90,8 @@ const KanjiLessonStarted = ({ callbackEnd }) => {
     setMeaningValue("");
     if (!helpUsed) {
       setAnswerNumber(answerNumber + 1);
+    } else {
+      setHelpUsed(false);
     }
   };
 
