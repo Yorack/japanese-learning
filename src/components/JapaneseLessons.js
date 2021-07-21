@@ -486,6 +486,20 @@ const lessons = [
       },
       {
         title: "counting",
+        columns: ["Number", "Form of つ", "Form of 個"],
+        description: (
+          <p>
+            The Japanese language uses special counting words to count things,
+            actions, and events. <br />
+            Below is a table for つ(tsu) and 個(こ・ko)、the counting words
+            introduced in this lesson.
+            <li>つ is a counter that can be used for anything</li>
+            <li>
+              個 is restricted to physical objects that are relatively small and
+              round.,
+            </li>
+          </p>
+        ),
         items: [
           new ArticleItem("１・一・いち", "一つ・ひとつ", "一個・いっこ"),
           new ArticleItem("２・二・に", "二つ・ふたつ", "二個・にこ"),
@@ -497,6 +511,16 @@ const lessons = [
           new ArticleItem("８・八・はち", "八つ・やっつ", "八個・はっこ"),
           new ArticleItem("９・九・きゅう", "九つ・ここのつ", "九個・きゅうこ"),
           new ArticleItem("１０・十・じゅう", "十・とお", "十個・じゅっこ"),
+        ],
+      },
+      {
+        title: "Phrase",
+        items: [
+          new ArticleItem(
+            "部屋には机いくつありますか",
+            "へやにはつくえいくつありますか",
+            "How many desks are in the room?"
+          ),
         ],
       },
     ],
