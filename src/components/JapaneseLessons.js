@@ -406,7 +406,11 @@ const lessons = [
           new ArticleItem("大阪", "おおさか (oosaka)", "NOM DE VILLE"),
           new ArticleItem("六歳", "ろくさい (rokusai)", ""),
           new ArticleItem("歳", "さい  (sai)", "years old"),
-          new ArticleItem("留学", "りゅうがく (ryuugaku)", ""),
+          new ArticleItem(
+            "留学生",
+            "りゅうがく (ryuugaku)",
+            "foreign exchange student"
+          ),
           new ArticleItem("留", "りゅう(ryuu)", "foreign ??"),
           new ArticleItem("外", "soto?", ""),
           new ArticleItem("外国人", "gaikokujin?", "foreigner ??"),
@@ -415,9 +419,16 @@ const lessons = [
           new ArticleItem("中学生", "chugaku?", "middle school"),
           new ArticleItem("高校", "こうこう(koko)", "high school"),
           new ArticleItem("大学生", "daigakusei", "university student"),
-          new ArticleItem("違い", "ちがい(chigai)", ""),
+          new ArticleItem("違い", "ちがい(chigai)", "the difference ?"),
           new ArticleItem("直美", "なおみ(naomi)", "nom | prenom ?"),
           new ArticleItem("健太", "けんた(kenta)", "nom | prenom ?"),
+          new ArticleItem("申し", "もうし(moushi)", "??"),
+          new ArticleItem(
+            "と申します",
+            "ともうします(tomoushimasu)",
+            "my name ??"
+          ),
+          new ArticleItem("大きい", "おおきい(ookii)", "??"),
         ],
       },
       {
@@ -463,12 +474,22 @@ const lessons = [
           new ArticleItem(
             "違いは何ですか",
             "chigaihanandesuka",
-            "What is the difference"
+            "What is the difference ?"
           ),
           new ArticleItem(
             "健太は東京に住んでいます",
             "kentaha tokyoni sundeimasu",
             "kenta lives in (particule 'ni') tokyo"
+          ),
+          new ArticleItem(
+            "田中と申します",
+            "tanaka to moushimasu",
+            "my name is tanaka"
+          ),
+          new ArticleItem(
+            "phraqe + (yo + ne)",
+            "yo + ne",
+            "a question (like with the ka)"
           ),
         ],
       },
