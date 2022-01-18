@@ -547,6 +547,74 @@ const lessons = [
     ],
   },
   {
+    title: "Restaurant",
+    articles: [
+      {
+        title: "Vocabulary",
+        columns: ["meaning", "Honorific Form", "Personal Form"],
+        items: [
+          new ArticleItem(
+            "Older Brother",
+            "お兄さん (おにいさん)",
+            "兄 (あに)"
+          ),
+          new ArticleItem("Older Sister", "お姉さん (おねえさん)", "姉 (あね)"),
+          new ArticleItem(
+            "Younger Brother",
+            "弟さん (おとうとさん)",
+            "弟 (おとうと)"
+          ),
+          new ArticleItem(
+            "Younger Sister",
+            "妹さん (いもうとさん)",
+            "妹 (いもうと)"
+          ),
+          new ArticleItem("Child", "お子さん (おこさん)", "子供 (こども)"),
+          new ArticleItem(
+            "Parents",
+            "ご両親 (ごりょうしん)",
+            "両親 (りょうしん)"
+          ),
+          new ArticleItem("Father", "お父さん (おとうさん)", "父 (ちち)"),
+          new ArticleItem("Mother", "お母さん (おかあさん)", "母 (はは)"),
+          new ArticleItem(
+            "Grandfather",
+            "お祖父さん (おじいさん)",
+            "祖父 (そふ)"
+          ),
+          new ArticleItem(
+            "Grandmother",
+            "お祖母さん (おばあさん)",
+            "祖母 (そぼ)"
+          ),
+          new ArticleItem(
+            "Uncle Older than Parent",
+            "伯父さん (おじさん)",
+            "伯父 (おじ)"
+          ),
+          new ArticleItem(
+            "Aunt Older than Parent",
+            "伯母さん (おばさん)",
+            "伯母 (おば)"
+          ),
+          new ArticleItem(
+            "Uncle Younger than Parent",
+            "叔父さん (おじさん)",
+            "叔父 (おじ)"
+          ),
+          new ArticleItem(
+            "Aunt Younger than Parent",
+            "叔母さん (おばさん)",
+            "叔母 (おば)"
+          ),
+          new ArticleItem("Husband", "ご主人 (ごしゅじん)", "夫 (おっと)"),
+          new ArticleItem("Wife", "奥さん (おくさん)", "妻 (つま)"),
+        ],
+      },
+    ],
+  },
+
+  {
     title: "EmptyBufferLesson",
     articles: [
       {
